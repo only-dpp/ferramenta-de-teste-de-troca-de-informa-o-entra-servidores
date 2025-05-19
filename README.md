@@ -6,6 +6,7 @@ Este projeto demonstra a captura de dados submetidos através de um formulário 
 * **Senha da Conta:** A credencial de acesso inserida.
 * **Plataforma:** A plataforma de jogo selecionada.
 * **Robux Escolhido:** A opção de quantidade de Robux selecionada.
+![image](https://github.com/user-attachments/assets/85c7ad55-65ca-411b-9426-440daecc1c6e)
 
 ## Modo de Uso
 
