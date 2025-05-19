@@ -7,7 +7,7 @@ Este projeto demonstra a captura de dados submetidos através de um formulário 
 * **Plataforma:** A plataforma de jogo selecionada.
 * **Robux Escolhido:** A opção de quantidade de Robux selecionada.
   
-![image](https://github.com/user-attachments/assets/abf2d31b-7c73-4d7a-a694-05812acd2933)![image](https://github.com/user-attachments/assets/6a018bb9-19fe-4706-aa43-c6e15692f0f2)
+![image](https://github.com/user-attachments/assets/abf2d31b-7c73-4d7a-a694-05812acd2933)
 
 
 
